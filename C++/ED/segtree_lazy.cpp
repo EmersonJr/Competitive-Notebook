@@ -1,61 +1,72 @@
-struct node{
-    pll val;
-    ll lazy;
-    ll l, r;
-    node(){
-        l=-1;r=-1;val={0,0};lazy=0;
-    }
-};
-
-node tree[40*MAX];
-int id = 2;
-ll N=1e9+10;
-
-pll merge(pll A, pll B){
-    if(A.ff==B.ff) return {A.ff, A.ss+B.ss};
-    return (A.ff<B.ff ? A:B);
+vector<int> v(MAXN), t(4*MAXN), lazy(4*MAXN);
+ 
+int merge(int x, int y){
+ 
+    return x + y;
 }
-
-void prop(ll l, ll r, int no){
-    ll mid = (l+r)/2;
-    if(l!=r){
-        if(tree[no].l==-1){
-            tree[no].l = id++;
-            tree[tree[no].l].val = {0, mid-l+1};
-        }
-        if(tree[no].r==-1){
-            tree[no].r = id++;
-            tree[tree[no].r].val = {0, r-(mid+1)+1};
-        }
-        tree[tree[no].l].lazy += tree[no].lazy;
-        tree[tree[no].r].lazy += tree[no].lazy;
+void prop(int id, int il, int ir){
+ 
+    if(!lazy[id]) return;
+ 
+    if(il != ir){
+ 
+        lazy[2*id] += lazy[id];
+        lazy[2*id+1] += lazy[id];
     }
-    tree[no].val.ff += tree[no].lazy;
-    tree[no].lazy=0;
+ 
+    t[id] += (ir - il + 1) * lazy[id];
+    lazy[id] = 0;
+ 
+    return;
 }
-
-void update(int a, int b, int x, ll l=0, ll r=2*N, ll no=1){
-    prop(l, r, no);
-    if(a<=l and r<=b){
-        tree[no].lazy += x;
-        prop(l, r, no);
+ 
+void build(int id, int il, int ir){
+ 
+    if(il == ir){
+ 
+        t[id] = v[il];
         return;
     }
-    if(r<a or b<l) return;
-    int m = (l+r)/2;
-    update(a, b, x, l, m, tree[no].l);
-    update(a, b, x, m+1, r, tree[no].r);
-
-    tree[no].val = merge(tree[tree[no].l].val, tree[tree[no].r].val);
+ 
+    int im = (il + ir) >> 1;
+ 
+    build(2*id, il, im);
+    build(2*id+1, im+1, ir);
+ 
+    t[id] = merge(t[2*id], t[2*id+1]);
+ 
+    return;
 }
-
-pll query(int a, int b, int l=0, int r=2*N, int no=1){
-    prop(l, r, no);
-    if(a<=l and r<=b) return tree[no].val;
-    if(r<a or b<l) return {INF, 0};
-    int m = (l+r)/2;
-    int left = tree[no].l, right = tree[no].r;
-
-    return tree[no].val = merge(query(a, b, l, m, left),
-                                query(a, b, m+1, r, right));
+ 
+void update(int id, int il, int ir, int l, int r, int x){
+ 
+    prop(id, il, ir);
+    if(l <= il && ir <= r){
+ 
+        lazy[id] += x;
+        prop(id, il, ir);
+        return;
+    }
+    if(l > ir || il > r) return;
+ 
+    int im = (ir+il) >> 1;
+ 
+    update(2*id, il, im, l, r, x);
+    update(2*id+1, im+1, ir, l, r, x);
+ 
+    t[id] = merge(t[2*id+1], t[2*id]);
+}
+ 
+int query(int id, int il, int ir, int l, int r){
+ 
+    prop(id, il, ir);
+    if(l <= il && ir <= r) return t[id];
+    if(l > ir || il > r) return 0;
+ 
+    int im = (ir+il) >> 1;
+ 
+    int esq = query(2*id, il, im, l, r);
+    int dir = query(2*id+1, im+1, ir, l, r);
+ 
+    return merge(esq, dir);
 }
