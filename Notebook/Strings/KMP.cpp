@@ -1,3 +1,11 @@
+//The prefix function is a string matching technique used in computer science and string algorithms. 
+//It efficiently computes an array that represents the length of the longest proper prefix which is also a suffix 
+//for each prefix of a given string. The Knuth-Morris-Pratt (KMP) algorithm utilizes the prefix function to 
+//perform pattern matching in linear time, making it an efficient algorithm for searching 
+//occurrences of a pattern within a text.
+
+// O(n+m)
+
 #include <bits/stdc++.h>
  
 using namespace std;
