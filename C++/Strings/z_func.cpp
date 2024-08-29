@@ -10,3 +10,10 @@ vector<int> Z(string s) {
     }
     return z;
 }
+
+
+/*
+
+    Faz a mesma coisa que o KMP.
+    Complexidade O(N)
+*/

@@ -20,6 +20,8 @@ const int MAX = (1e6) + 1;
 const int MOD = 998244353;
 const int LOG = 30;
 
+// Calcula coisinhas de polinomio
+
 using cd = complex<double>;
 
 // FFT (usei na H da mineira de 2024 de contar os quadrados)

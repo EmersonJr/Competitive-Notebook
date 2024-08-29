@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// permite que você saiba se um número 
+// faz parte de alguma lis
+
 #define sws std::ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 #define int long long int
 #define float long double

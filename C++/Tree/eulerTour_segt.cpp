@@ -1,5 +1,10 @@
 #include <bits/stdc++.h>
  
+ /*
+ 
+    Permite computar uma seg numa arvore
+    Além de tornar a arvore em um array
+ */
 using namespace std;
 #define int long long
 const int MOD = 1e9+7;
