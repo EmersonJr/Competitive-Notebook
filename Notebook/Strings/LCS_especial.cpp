@@ -1,3 +1,5 @@
+// LCS com recuperação da string que dá a maior substring comum entre S e T
+
 void recover(int i, int j){ 
      if (i>=s_size || j>=t_size) return ; 
      if (s[i]==t[j]){ans.push_back(s[i]);recover(i+1, j+1);} 
