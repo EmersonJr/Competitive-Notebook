@@ -13,7 +13,11 @@ vector<int> Z(string s) {
 
 
 /*
+The Z-function for this string is an array of length  $n$  where the  $i$ -th element is equal to the greatest number of characters starting from the position  $i$  that coincide with the first characters of  
 
-    Faz a mesma coisa que o KMP.
-    Complexidade O(N)
+$s$ .
+
+In other words,  
+$z[i]$  is the length of the longest string that is, at the same time, a prefix of  $s$  and a prefix of the suffix of  $s$  starting at  $i$ .
+Complexidade O(N)
 */

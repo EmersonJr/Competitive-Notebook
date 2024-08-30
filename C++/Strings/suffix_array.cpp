@@ -1,3 +1,6 @@
+// A suffix array will contain integers that represent the
+// starting indexes of the all the suffixes of a given string, after the aforementioned suffixes are sorted.
+
 vector<int> suffix_array(string s) {
     s += "$";
     int n = s.size(), N = max(n, 260);

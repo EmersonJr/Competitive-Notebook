@@ -1,5 +1,8 @@
 #include <bits/stdc++.h>
  
+ // Calcula distancias com arestas negativas
+//  Serve pra achar ciclo também
+// Vetor de distancias da pripri
 using namespace std;
 #define int long long
 #define sws std::ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);

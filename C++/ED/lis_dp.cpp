@@ -3,6 +3,31 @@ using namespace std;
 
 // permite que você saiba se um número 
 // faz parte de alguma lis
+// calcula pra direita e pra esquerda
+// Instead of the above method for computing the longest increasing subsequence in  
+
+// $O(n \log n)$  we can also solve the problem in a different way: using some simple data structures.
+
+// Let's go back to the first method. Remember that  
+// $d[i]$  is the value  $d[j] + 1$  with  $j < i$  and  
+
+// $a[j] < a[i]$ .
+
+// Thus if we define an additional array  
+
+// $t[]$  such that
+//  
+// $$t[a[i]] = d[i],$$ 
+
+// then the problem of computing the value  
+// $d[i]$  is equivalent to finding the maximum value in a prefix of the array  
+
+// $t[]$ :
+//  
+// $$d[i] = \max\left(t[0 \dots a[i] - 1] + 1\right)$$ 
+
+// The problem of finding the maximum of a prefix of an array (which changes) is a 
+// standard problem that can be solved by many different data structures. For instance we can use a Segment tree or a Fenwick tree.
 
 #define sws std::ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 #define int long long int

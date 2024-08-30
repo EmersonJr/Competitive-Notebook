@@ -1,6 +1,6 @@
 //Distinct values queries
 #include <bits/stdc++.h>
- 
+
 using namespace std;
 //#define int long long
 #define pii pair<int,int>

@@ -15,7 +15,14 @@ using namespace std;
  const int INF = 0x3f3f3f3f3f;
 const long double PI = acos(-1);
 const int MAX = 1004;
+// SAT (Boolean satisfiability problem) is the problem of assigning Boolean values to variables to satisfy a given Boolean formula. The Boolean formula will usually be given in CNF (conjunctive normal form), which is a conjunction of multiple clauses, where each clause is a disjunction of literals (variables or negation of variables).
+// 2-SAT (2-satisfiability) is a restriction of the SAT problem, in 2-SAT every clause has exactly two literals.
+// $a, b, c$  such that the following formula is true:
+//  
+// $$(a \lor \lnot b) \land (\lnot a \lor b) \land (\lnot a \lor \lnot b) \land (a \lor \lnot c)$$ 
 
+// SAT is NP-complete, there is no known efficient solution for it. However 2SAT can be solved efficiently in  
+// $O(n + m)$  where  $n$  is the number of variables and  $m$  is the number of clauses.
 int n;
 int componente[MAX];
 vector<int> adj[MAX];
