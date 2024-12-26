@@ -4,8 +4,8 @@ using namespace std;
 // when removed along with associated edges, makes the graph disconnected 
 // (or more precisely, increases the number of connected components in the graph).
 // The task is to find all articulation points in the given graph.
-// The algorithm described here is based on depth first search and has  
-// $O(N+M)$  complexity, where  $N$  is the number of vertices and  $M$  is the number of edges in the graph.
+// The algorithm described here is based on depth first search and has
+// $O(N+M)$ complexity,where $N$ is the number of vertice and $M$ is the number of edges in the graph.
 #define sws std::ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 #define endl "\n"
 #define int long long
