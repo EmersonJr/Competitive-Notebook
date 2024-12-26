@@ -1,6 +1,6 @@
 const int N = 300;
 // solves the maximum flow problem in  $O(V^2E)$ 
-struct Dinic {
+struct Dinitz {
     struct Edge{
         int from, to; ll flow, cap;
     };

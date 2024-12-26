@@ -56,7 +56,7 @@ struct Dinic {
             ans += run(source, sink, LLINF);
         return ans;
     }
-    void addEdge(int u, int v, ll c, ll rc) {
+    void addEdge(int u, int v, ll c, ll rc = 0) {
         Edge e = {u, v, 0, c};
         edge.pb(e);
         g[u].push_back(ne++);

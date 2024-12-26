@@ -35,7 +35,6 @@ void kmp(){
     }
 }
 int main(){
- 
     string s; cin >> s >> p;
     int ans = 0, lider = -1;
  
