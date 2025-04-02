@@ -18,6 +18,10 @@ using namespace std;
 #define in(v) for(auto & x : v) cin >> x;
 #define out(v) for(auto x : v) cout << x << ' ';
 #define tfii tuple<float, int, int>
+#define rep(a,b,c) for(int a = (int)b ; a < (int)c ; a++)
+#define repi(a,b,c) for(int a = (int)b ; a >= (int)c ; a--)
+#define tam(x) ((int)x.size())
+#define endl '\n'
 
 const int MAXN = 31700;
 const int INF = INT64_MAX;
