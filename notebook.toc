@@ -1,0 +1,81 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Algoritmos}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Mo}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Ternary Search}{4}{subsection.1.2}%
+\contentsline {section}{\numberline {2}DP}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Dp}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Knapsack}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Lcsubseq}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Lis}{5}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Sosdp}{5}{subsection.2.5}%
+\contentsline {section}{\numberline {3}ED}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Dst}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Dsu}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Lis Dp}{6}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Min Queue}{8}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Mo}{8}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Ordered Set}{9}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Prefixsum 2d}{10}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Rmq}{10}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Segtree Lazy}{10}{subsection.3.9}%
+\contentsline {section}{\numberline {4}Geometria}{11}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Convex Hull}{11}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Inside Polygon}{12}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Minkowski}{12}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Misc}{13}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Point Location}{14}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Grafos}{14}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Articulation Point}{14}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Bellman Ford}{15}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Bridgetree}{16}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Dfs Tree}{16}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Dijktra}{16}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Dinic}{17}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Floyd}{17}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Ford Fulkerson Isa}{17}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.9}Kosaraju}{18}{subsection.5.9}%
+\contentsline {subsection}{\numberline {5.10}Mcmf}{19}{subsection.5.10}%
+\contentsline {subsection}{\numberline {5.11}Two Sat}{20}{subsection.5.11}%
+\contentsline {section}{\numberline {6}Math}{20}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Fastexp}{20}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Fft}{20}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Inverso Mult}{21}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Matrix Exp}{22}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Mulmod}{22}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Mult Matriz}{22}{subsection.6.6}%
+\contentsline {section}{\numberline {7}Misc}{22}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Bitwise}{22}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Template}{23}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Test}{23}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Xorbasis}{24}{subsection.7.4}%
+\contentsline {section}{\numberline {8}QuestoesCSES}{25}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Alex And Complicated Task}{25}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Bracketsequence}{26}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Editdistance}{27}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Generate Strings}{27}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}Multtable}{28}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}Prefixsumqueries}{28}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}Reachabilityqueries}{29}{subsection.8.7}%
+\contentsline {subsection}{\numberline {8.8}Rectanglecutting}{30}{subsection.8.8}%
+\contentsline {subsection}{\numberline {8.9}Removalgame}{30}{subsection.8.9}%
+\contentsline {subsection}{\numberline {8.10}Sintaxenextperm}{31}{subsection.8.10}%
+\contentsline {section}{\numberline {9}Strings}{31}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Aho}{31}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Hash}{32}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Kmp}{33}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Lcs}{34}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Lcs Especial}{34}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}Suffix Array}{35}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}Suffix Automata}{35}{subsection.9.7}%
+\contentsline {subsection}{\numberline {9.8}Trie}{36}{subsection.9.8}%
+\contentsline {subsection}{\numberline {9.9}Trie Xor}{36}{subsection.9.9}%
+\contentsline {subsection}{\numberline {9.10}Z Func}{37}{subsection.9.10}%
+\contentsline {section}{\numberline {10}Tree}{37}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Binary Lifting}{37}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Centroid}{38}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Eulertour Segt}{38}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Hld}{39}{subsection.10.4}%
+\contentsline {subsection}{\numberline {10.5}Isomorftree}{40}{subsection.10.5}%
+\contentsline {subsection}{\numberline {10.6}Kruskall}{41}{subsection.10.6}%
+\contentsline {subsection}{\numberline {10.7}Lca}{42}{subsection.10.7}%
+\contentsline {subsection}{\numberline {10.8}Virtualtree}{42}{subsection.10.8}%

@@ -1,0 +1,147 @@
+\documentclass[10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{multicol}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{soul}
+
+\usepackage[a4paper, landscape, top=0.5cm, bottom=1cm, left=0.5cm, right=0.5cm, bmargin=1cm, footnotesep=0.0cm, footskip=0.5cm]{geometry}
+\setlength{\columnseprule}{0.01cm}
+\setlength{\columnsep}{0.5cm}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{ballblue}{rgb}{0.0, 0.0, 0.8}
+
+
+\lstset{
+  language=C++,
+  tabsize=2,
+  breakatwhitespace=false,
+  breaklines=true,
+  captionpos=b,
+  keepspaces=true,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  extendedchars=false,
+  inputencoding=utf8,
+  basicstyle=\ttfamily\footnotesize,
+  keywordstyle=\color{blue}\ttfamily,
+  stringstyle=\color{green}\ttfamily,
+  commentstyle=\color{red}\ttfamily,
+  morecomment=[l][\color{magenta}]{\#},
+}
+
+\newcommand\includes[2]{ % Thanks to joseleite19 icpc notebook on github
+   \subsection{#1}
+   \lstinputlisting{#2}
+}
+
+\title{Notebook - Maratona de Programação}
+\author{My little paçoca do Chico Bento}
+\date{19/07/2025}
+
+\begin{document}
+\begin{figure}[t]
+\includegraphics[scale=0.4]{unb.jpg}
+\centering
+\end{figure}
+\maketitle
+\begin{multicols}{2}
+
+
+\tableofcontents
+
+\newpage
+\section{Algoritmos}
+\includes{Mo}{C++/Algoritmos/mo.cpp}
+\includes{Ternary Search}{C++/Algoritmos/Ternary_Search.cpp}
+\section{DP}
+\includes{Dp}{C++/DP/dp.cpp}
+\includes{Knapsack}{C++/DP/Knapsack.cpp}
+\includes{Lcsubseq}{C++/DP/lcsubseq.cpp}
+\includes{Lis}{C++/DP/LIS.cpp}
+\includes{Sosdp}{C++/DP/sosDP.cpp}
+\section{ED}
+\includes{Dst}{C++/ED/DST.cpp}
+\includes{Dsu}{C++/ED/DSU.cpp}
+\includes{Lis Dp}{C++/ED/lis_dp.cpp}
+\includes{Min Queue}{C++/ED/min_queue.cpp}
+\includes{Mo}{C++/ED/mo.cpp}
+\includes{Ordered Set}{C++/ED/ordered_set.cpp}
+\includes{Prefixsum 2d}{C++/ED/prefixsum_2d.cpp}
+\includes{Rmq}{C++/ED/RMQ.cpp}
+\includes{Segtree Lazy}{C++/ED/segtree_lazy.cpp}
+\section{Geometria}
+\includes{Convex Hull}{C++/Geometria/convex_hull.cpp}
+\includes{Inside Polygon}{C++/Geometria/inside_polygon.cpp}
+\includes{Minkowski}{C++/Geometria/minkowski.cpp}
+\includes{Misc}{C++/Geometria/misc.cpp}
+\includes{Point Location}{C++/Geometria/Point_Location.cpp}
+\section{Grafos}
+\includes{Articulation Point}{C++/Grafos/articulation_point.cpp}
+\includes{Bellman Ford}{C++/Grafos/Bellman_Ford.cpp}
+\includes{Bridgetree}{C++/Grafos/bridgeTree.cpp}
+\includes{Dfs Tree}{C++/Grafos/dfs_tree.cpp}
+\includes{Dijktra}{C++/Grafos/Dijktra.cpp}
+\includes{Dinic}{C++/Grafos/Dinic.cpp}
+\includes{Floyd}{C++/Grafos/Floyd.cpp}
+\includes{Ford Fulkerson Isa}{C++/Grafos/ford_fulkerson_isa.cpp}
+\includes{Kosaraju}{C++/Grafos/Kosaraju.cpp}
+\includes{Mcmf}{C++/Grafos/MCMF.cpp}
+\includes{Two Sat}{C++/Grafos/two_sat.cpp}
+\section{Math}
+\includes{Fastexp}{C++/Math/fastexp.cpp}
+\includes{Fft}{C++/Math/fft.cpp}
+\includes{Inverso Mult}{C++/Math/inverso_mult.cpp}
+\includes{Matrix Exp}{C++/Math/Matrix_Exp.cpp}
+\includes{Mulmod}{C++/Math/mulmod.cpp}
+\includes{Mult Matriz}{C++/Math/Mult_matriz.cpp}
+\section{Misc}
+\includes{Bitwise}{C++/Misc/Bitwise.cpp}
+\includes{Template}{C++/Misc/Template.cpp}
+\includes{Test}{C++/Misc/test.sh}
+\includes{Xorbasis}{C++/Misc/XORBasis.cpp}
+\section{QuestoesCSES}
+\includes{Alex And Complicated Task}{C++/QuestoesCSES/Alex_and_Complicated_task.cpp}
+\includes{Bracketsequence}{C++/QuestoesCSES/bracketSequence.cpp}
+\includes{Editdistance}{C++/QuestoesCSES/editDistance.cpp}
+\includes{Generate Strings}{C++/QuestoesCSES/Generate_strings.cpp}
+\includes{Multtable}{C++/QuestoesCSES/multTable.cpp}
+\includes{Prefixsumqueries}{C++/QuestoesCSES/prefixSumQueries.cpp}
+\includes{Reachabilityqueries}{C++/QuestoesCSES/reachabilityQueries.cpp}
+\includes{Rectanglecutting}{C++/QuestoesCSES/rectangleCutting.cpp}
+\includes{Removalgame}{C++/QuestoesCSES/removalGame.cpp}
+\includes{Sintaxenextperm}{C++/QuestoesCSES/sintaxeNextPerm.cpp}
+\section{Strings}
+\includes{Aho}{C++/Strings/aho.cpp}
+\includes{Hash}{C++/Strings/Hash.cpp}
+\includes{Kmp}{C++/Strings/KMP.cpp}
+\includes{Lcs}{C++/Strings/LCS.cpp}
+\includes{Lcs Especial}{C++/Strings/LCS_especial.cpp}
+\includes{Suffix Array}{C++/Strings/suffix_array.cpp}
+\includes{Suffix Automata}{C++/Strings/suffix_automata.cpp}
+\includes{Trie}{C++/Strings/trie.cpp}
+\includes{Trie Xor}{C++/Strings/trie_xor.cpp}
+\includes{Z Func}{C++/Strings/z_func.cpp}
+\section{Tree}
+\includes{Binary Lifting}{C++/Tree/binary_lifting.cpp}
+\includes{Centroid}{C++/Tree/centroid.cpp}
+\includes{Eulertour Segt}{C++/Tree/eulerTour_segt.cpp}
+\includes{Hld}{C++/Tree/hld.cpp}
+\includes{Isomorftree}{C++/Tree/IsomorfTree.cpp}
+\includes{Kruskall}{C++/Tree/Kruskall.cpp}
+\includes{Lca}{C++/Tree/lca.cpp}
+\includes{Virtualtree}{C++/Tree/virtualTree.cpp}
+
+\end{multicols}
+\end{document}

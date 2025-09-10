@@ -10,14 +10,3 @@ vector<int> Z(string s) {
     }
     return z;
 }
-
-
-/*
-The Z-function for this string is an array of length $n$ where the $i$-th element is equal to the greatest number of characters starting from the position $i$ that coincide with the first characters of
-
-$s$.
-
-In other words,
-$z[i]$ is the length of the longest string that is, at the same time, a prefif of $s$ and a prefix of the suffix of $s$ starting at $i$.
-Complexidade O(N)
-*/

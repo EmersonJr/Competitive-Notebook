@@ -20,8 +20,6 @@ const int MAX = (1e6) + 1;
 const int MOD = 998244353;
 const int LOG = 30;
 
-// allows us to multiply two polynomials of length $n$ in $O(n \log n)$ time
-
 using cd = complex<double>;
 
 // FFT (usei na H da mineira de 2024 de contar os quadrados)

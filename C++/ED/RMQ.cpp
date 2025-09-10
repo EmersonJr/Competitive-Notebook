@@ -1,15 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-// codigo de Range Minimum query; Spt = sparse table.
-//You are given an rray A[1..N]. You have to answer incoming queries of the form
-//(L, R) ,which ask to find the minimum element in array A between positions L and R inclusive.
-// SPARSE TABLE ---->
-// Sparse Table is a data structure,that allows answering range queries.It can answer most range queries in
-// O(log n),but its true power
-// is answering range minimum queries (or equivalent range maximum queries). 
-// For those queries it can compute the answer in $O(1)$ time.
-
 #define sws std::ios::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 #define int long long
 #define endl "\n"
