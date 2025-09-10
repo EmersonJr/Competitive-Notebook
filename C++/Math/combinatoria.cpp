@@ -51,6 +51,11 @@ int comb(int a, int b) {
 // Formula 1: Cn = comb(2*n, n) - comb(2*n, n-1)
 // Formula 2: Cn = Sum(i=0 -> n-1) Ci * C(n-i-1)
 
+// Teorema do taco de hoquei
+// Sum(r=k -> n) comb(r, k) = comb(r+1, k+1)
+
+// Identidade importante
+// n*comb(n-1, k-1) = (k)*comb(n, k)
 
 // Valor esperado:
 // E(X) = sum i * p(x == i) (valor do evento vezes a chance dele ocorrer)
