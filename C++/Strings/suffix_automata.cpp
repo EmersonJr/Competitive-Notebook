@@ -6,13 +6,15 @@
 
 struct SuffixAutomata {
     int n, id = 1, last = 1;
-    vector<vector<int>> to;
-    vector<int> len, lnk, occ, states, fpos;
+    vector<array<int, 26>> to;
+    vector<int> len, lnk, occ, fpos;
 
-    SuffixAutomata(string &s, char a='a'): n(s.size()), to(2*n+2, vector<int>(26, 0)), len(2*n+2), lnk(2*n+2), occ(2*n+2, 0), fpos(2*n+2) {
-        len[1] = lnk[1] = 0, states.pb(1);
+    SuffixAutomata(string &s, char a='a'): n(s.size()), to(2*n+2, {0}), len(2*n+2), lnk(2*n+2), occ(2*n+2, 0), fpos(2*n+2) {
+        len[1] = lnk[1] = 0;
         for (char c : s) push(c-a);
 
+        vector<int> states(id); 
+        iota(all(states), 1);
         sort(all(states), [&](int a, int b) {return len[a] > len[b];});
         for (int st : states)
             occ[lnk[st]] += occ[st];
@@ -22,7 +24,6 @@ struct SuffixAutomata {
         int curr = ++id;
         int prev = last;
         last = curr;
-        states.pb(curr);
 
         len[curr] = len[prev]+1;
         fpos[curr] = len[curr]-1;
@@ -37,7 +38,6 @@ struct SuffixAutomata {
             lnk[curr] = q;
         else {
             int clone = ++id;
-            states.pb(clone);
 
             lnk[clone] = lnk[q];
             to[clone] = to[q];
