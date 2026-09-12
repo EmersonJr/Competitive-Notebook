@@ -37,7 +37,7 @@ int comb(int a, int b) {
 // Numeros de somas com upper bound
 // x1 + x2 + ... + xk = n, xi <= b
 // resolve com inclusao-exclusao, basicamente, a gente faz na quantidade de caras que excedem o limite b
-// Sum(i=0 -> k) comb(k, i) * comb(n + k - 1 - (b+1)*i, d-1)
+// Sum(i=0 -> k) (-1)^i * comb(k, i) * comb(n + k - 1 - (b+1)*i, k-1)
 
 
 // Burnside Lemma
